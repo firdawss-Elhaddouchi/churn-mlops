@@ -5,3 +5,6 @@ __pycache__/
 mlruns/
 mlflow.db
 airflow/
+# Generated Airflow outputs
+/data/interim/
+/data/processed/clients.csv

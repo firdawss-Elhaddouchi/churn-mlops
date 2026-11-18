@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/run_pipeline.py
+    deps:
+    - path: data/raw/clients.csv
+      hash: md5
+      md5: 4506a8e98bc1bdee6e8fbbcfbfcd6827
+      size: 361162
+    - path: src/pipeline.py
+      hash: md5
+      md5: 4fb73769d7d14bf3ddd7eaf9441cb9f3
+      size: 831
+    - path: src/run_pipeline.py
+      hash: md5
+      md5: 8d8d01ac82888f43e9dd399fc6584f67
+      size: 811
+    - path: src/schema.py
+      hash: md5
+      md5: 34fee663459385072e975eeb5d8ef01f
+      size: 1068
+    outs:
+    - path: data/processed/clients_prepared.csv
+      hash: md5
+      md5: 28795ab9211ddf72a3c715600dc18892
+      size: 386214

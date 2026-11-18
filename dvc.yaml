@@ -1,0 +1,10 @@
+stages:
+  prepare:
+    cmd: python src/run_pipeline.py
+    deps:
+      - data/raw/clients.csv
+      - src/run_pipeline.py
+      - src/pipeline.py
+      - src/schema.py
+    outs:
+      - data/processed/clients_prepared.csv
